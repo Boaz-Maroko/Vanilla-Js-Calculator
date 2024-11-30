@@ -1,0 +1,128 @@
+/* Universal box-sizing */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Screen styles */
+.screen {
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    font-size: 2rem;
+}
+
+/* Keypad container */
+.keypad {
+    display: grid;
+    width: 288px;
+    /* 4 columns × 72px */
+    grid-template-columns: repeat(4, 72px);
+    /* Match button width */
+    grid-template-rows: repeat(4, 72px);
+    /* Match button height */
+    align-items: center;
+    justify-items: center;
+    /* Center children within cells */
+    gap: 4px;
+}
+
+/* Button styles */
+.button {
+    display: flex;
+    width: 72px;
+    height: 72px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    cursor: default;
+}
+
+/* Button placement using grid coordinates */
+#btn-1 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#btn-2 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#btn-3 {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+#btn-4 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#btn-5 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#btn-6 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#btn-7 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#btn-8 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#btn-9 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#btn-0 {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+#btn-dt {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#btn-mn {
+    grid-row: 4;
+    grid-column: 3;
+}
+
+#btn-pl {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#btn-dd {
+    grid-row: 3;
+    grid-column: 4;
+}
+
+#btn-eq {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+#clear {
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    cursor: default;
+    width: 300px;
+    height: 72px;
+}
